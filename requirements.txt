@@ -1,0 +1,26 @@
+# Utilities:
+numpy   #  for performing mathematical operations faster when compared to an array.. 
+pandas   # for calculations..
+
+# Face recognition:
+scikit-learn   # for using models such as SVM to identify images..
+dlib-bin  # as dlib is tedious to download and work with..
+
+git+https://github.com/ageitgey/face_recognition_models
+setuptools<70.0.0
+
+# Database:
+supabase   # for data storage
+bcrypt   # used for hashing passwords and Important credentials..
+
+segno     # will be used for generating QR codes
+pillow   # used for image Pre-processing such as resizing, transforming, scaling, flipping etc
+
+# for frontend
+streamlit 
+
+#for Voice Recognition
+librosa    # for editing modifying audio files so that person can be identified clearly...
+resemblyzer  # for converting audio files into embeddings...
+
+
