@@ -13,6 +13,20 @@ def style_background_home():
                 padding:2.5rem !important;
                 border-radius: 5rem !important;
             }
+
+            /* Keep Streamlit headings readable on the app's light backgrounds */
+            
+            .stApp [data-testid="stHeading"] h1,
+            .stApp [data-testid="stHeading"] h2,
+            .stApp [data-testid="stHeading"] h3 {
+                color: #171923 !important;
+            }
+
+            /* Keep selectbox labels readable */
+            .stApp [data-testid="stSelectbox"] label {
+                color: #171923 !important;
+            }
+            
         </style>
     
     """, unsafe_allow_html=True)
