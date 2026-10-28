@@ -76,10 +76,11 @@ def student_dashboard():
             st.space()
 
             def unenroll_button():
-                    if st.button("Unenroll from this Course",type="tertiary",width='stretch',icon=':material/delete_forever:',key=f"unenroll_{sid}",):
-                        unenroll_student_to_subject(student_id,sid)
-                        st.toast(f'Unenrolled from {sub["name"]} successfully!!')
-                        st.rerun()
+                st.space()
+                if st.button("Unenroll from this Course",type="tertiary",width='stretch',icon=':material/delete_forever:',key=f"unenroll_{sid}",):
+                    unenroll_student_to_subject(student_id,sid)
+                    st.toast(f'Unenrolled from {sub["name"]} successfully!!')
+                    st.rerun()
             
 
             with cols[i % 2]:   # here the response is shown in the form of grid of 2X2
