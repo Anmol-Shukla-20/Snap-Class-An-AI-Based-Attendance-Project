@@ -97,8 +97,6 @@ def student_dashboard():
                       
                 )
                  
-
-            stats_map[sid]['attended'] += 1
     footer_dashboard()
      
 def student_screen():
