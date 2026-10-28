@@ -8,7 +8,7 @@ import io   # for binary data handling....
 @ st.dialog("Share Class Link")
 
 def share_subject_dialog(subject_name,subject_code):
-    app_domain ="http://localhost:8501"
+    app_domain ="snap-class-an-ai-based-attendance-project.streamlit.app"
     join_url = f"{app_domain}/?join-code={subject_code}"
 
     st.header("Scan to Join Class")
