@@ -83,9 +83,9 @@ def style_base_layout():
         }
         
         # uncomment this portion if you strictly want the text in black color(like if theme is light then font appears light..like I'm Student or I'm Teacher....)
-        # .stApp div[data-testid="stColumn"] h2 {
-        #     color: #000000 !important;
-        # }
+        .stApp div[data-testid="stColumn"] h2 {
+            color: #000000 !important;
+        }
 
         h3,h4,p {
              font-family: 'Outfit',sans-serif;
