@@ -130,14 +130,14 @@ def style_base_layout():
             border-radius: 2rem !important;
             background-color:black !important;
             color: white !important;
-            padding: 10px 20px 1important;
+            padding: 10px 20px !important;
             border: none !important;
             transition: transform 0.25s ease-in-out !important;
         }
 
 
         button:hover{
-            transform: scale(1.05)
+            transform: scale(1.05) !important
         }
 
  
