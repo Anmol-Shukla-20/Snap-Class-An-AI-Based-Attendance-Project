@@ -1,4 +1,4 @@
-# SnapClass
+# DEI SnapClass
 
 SnapClass is a Streamlit attendance app for students and teachers. It combines subject enrollment and attendance management with face-based student identification, and includes an optional voice-attendance workflow.
 
@@ -31,3 +31,11 @@ SnapClass is a Streamlit attendance app for students and teachers. It combines s
 - **QR codes:** segno.
 
 The app's entry point is `app.py`. Application screens, reusable UI components, database access, and recognition pipelines are organized under `src/`.
+
+## Requirements
+
+- Python 3.10 or later. Python 3.11 is a good starting choice for deployment.
+- A Supabase project with tables and columns matching the queries made in `src/database/db.py` and the attendance screens. This repository does not include database migrations or a complete schema setup script.
+- A camera for face registration and classroom photo capture. A microphone is needed for voice enrollment and voice attendance.
+
+The face-recognition dependencies include native packages. Installation can vary by operating system and Python version; use an environment compatible with the packages listed in `requirements.txt`.
