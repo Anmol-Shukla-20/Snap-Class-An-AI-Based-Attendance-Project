@@ -39,3 +39,29 @@ The app's entry point is `app.py`. Application screens, reusable UI components, 
 - A camera for face registration and classroom photo capture. A microphone is needed for voice enrollment and voice attendance.
 
 The face-recognition dependencies include native packages. Installation can vary by operating system and Python version; use an environment compatible with the packages listed in `requirements.txt`.
+
+## Run locally
+
+Open PowerShell in the project directory and run:
+
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Create a local Streamlit secrets file at `.streamlit/secrets.toml`:
+
+```toml
+SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL"
+SUPABASE_KEY = "YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY"
+```
+
+Replace the placeholders with your own Supabase project values. Keep this file private; it should not be committed or shared.
+
+Start the app:
+
+```powershell
+streamlit run app.py
+```
