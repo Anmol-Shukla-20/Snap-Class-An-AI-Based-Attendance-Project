@@ -65,3 +65,13 @@ Start the app:
 ```powershell
 streamlit run app.py
 ```
+
+Streamlit prints a local URL (usually `http://localhost:8501`) that you can open in your browser.
+
+## Deploy on Streamlit Community Cloud
+
+1. Push the project to a GitHub repository.
+2. In [Streamlit Community Cloud](https://share.streamlit.io/), create an app from that repository.
+3. Select the deployment branch and set the main file to `app.py`.
+4. Open the app's **Settings → Secrets** and add the `SUPABASE_URL` and `SUPABASE_KEY` values using the TOML format shown above. Do not put real credentials in the repository.
+5. Deploy and check the app logs if dependency installation or startup fails.
