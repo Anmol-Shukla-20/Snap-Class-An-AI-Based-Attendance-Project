@@ -75,3 +75,10 @@ Streamlit prints a local URL (usually `http://localhost:8501`) that you can open
 3. Select the deployment branch and set the main file to `app.py`.
 4. Open the app's **Settings → Secrets** and add the `SUPABASE_URL` and `SUPABASE_KEY` values using the TOML format shown above. Do not put real credentials in the repository.
 5. Deploy and check the app logs if dependency installation or startup fails.
+
+## Repository notes
+
+- `requirements.txt` lists the Python dependencies.
+- `.gitignore` excludes local secrets, virtual environments, and Python cache files.
+- Test images or recordings should not be committed, especially if they contain identifiable people.
+- The database schema is managed in Supabase; it is not provisioned automatically by this app.
