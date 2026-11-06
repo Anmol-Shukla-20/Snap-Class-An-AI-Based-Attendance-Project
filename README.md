@@ -76,6 +76,13 @@ Streamlit prints a local URL (usually `http://localhost:8501`) that you can open
 4. Open the app's **Settings → Secrets** and add the `SUPABASE_URL` and `SUPABASE_KEY` values using the TOML format shown above. Do not put real credentials in the repository.
 5. Deploy and check the app logs if dependency installation or startup fails.
 
+## Privacy and security
+
+- Face and voice embeddings are biometric data. Get informed consent before collecting them, limit access to the database, and define a retention/deletion process appropriate for your users and applicable laws.
+- Never commit `.streamlit/secrets.toml`, `.env` files, API keys, passwords, or other credentials. Use Streamlit's Secrets settings for deployed apps.
+- Use a Supabase key appropriate for client-side application access, together with carefully configured Row Level Security (RLS) policies. Do not expose a service-role key in the app or repository.
+- This project should not be treated as the sole authority for consequential attendance decisions. Review recognition results and account for false matches and missed matches.
+
 ## Repository notes
 
 - `requirements.txt` lists the Python dependencies.
